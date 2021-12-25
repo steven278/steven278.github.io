@@ -1,0 +1,53 @@
+#profilepicwrapper{
+    position: relative;
+}
+#profilepic{
+    position:absolute;
+}
+
+.profile-details{
+    margin-left: 11em;
+    margin-top: 8em;
+}
+
+#hi{
+    font-size: 4rem;
+    font-weight: 500;
+    color: var(--softPeach);
+}
+
+#MyName{
+    font-size: 5.5rem;
+    font-weight: 600;
+    color: var(--electricBlue);
+}
+#briefIntro{
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: var(--softPeach);
+}
+
+#btnAboutMe{
+    margin-top: 1.5em;
+    display: inline-block;
+    background-color: var(--dark);
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--electricBlue);
+    padding: 0.75em 1.75em;
+    font-size: 1.5em;
+    border: 0.2em solid var(--electricBlue);
+    border-radius: 9999px;
+    flex-shrink: 0;
+    transition-duration: 0.5s;
+}
+#btnAboutMe:hover{
+    color: var(--softPeach);
+    background-color: var(--electricBlue);
+}
+
+@media only screen and (min-width: 1200px) {
+    #profilepic{
+        width: 40vw;
+    }
+}
