@@ -1,5 +1,7 @@
-#aboutContainer{
+#aboutWrapper{
     background-color: var(--dark);
+}
+#aboutContainer{
     padding-top: 30em;
     padding-left: 11em;
 }
@@ -9,7 +11,7 @@
     display: flex;
     justify-content: center;
     width: 30em;
-    margin-right: 15em;
+    margin-right: 11em;
 
     transform: translateY(0);
 	transition: transform 1.5s;
@@ -72,6 +74,101 @@
     font-size: 1.2rem;
 }
 
+@media only screen and (min-width: 1200px) and (max-width: 1431px){
+    #imgAboutWrapper{
+        width: 20em;
+        margin-right: 11em;
+    }
+    #imgAbout{
+        width: 25em;
+        height: 25em;
+    }
+    #cardAboutWrapper{
+        margin-right: 1em;
+    }
+    #aboutContainer{
+        padding-top: 30em;
+        padding-left: 10em;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    #imgAboutWrapper{
+        width: 16em;
+        margin-right: 8em;
+    }
+    #imgAbout{
+        width: 16em;
+        height: 16em;
+    }
+    #cardAboutWrapper{
+        margin-right: 1em;
+    }
+    #aboutContainer{
+        padding-top: 30em;
+        padding-left: 8em;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    #imgAboutWrapper{
+       margin: auto;
+       margin-bottom: 5em;
+    }
+    #imgAbout{
+        width: 25em;
+        height: 25em;
+        display: block;
+        margin: 0 auto;
+    }
+    #cardAboutWrapper{
+        margin: auto;
+    }
+    #aboutContainer{
+        padding-top: 30em;
+        padding-left: 0;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    #imgAboutWrapper{
+       margin: auto;
+       margin-bottom: 5em;
+    }
+    #imgAbout{
+        width: 20em;
+        height: 20em;
+        display: block;
+        margin: 0 auto;
+    }
+    #cardAboutWrapper{
+        margin: auto;
+    }
+    #aboutContainer{
+        padding-top: 20em;
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    #imgAboutWrapper{
+       margin: auto;
+       margin-bottom: 5em;
+    }
+    #imgAbout{
+        width: 16em;
+        height: 16em;
+        display: block;
+        margin: 0 auto;
+    }
+    #cardAboutWrapper{
+        margin: auto;
+    }
+    #aboutContainer{
+        padding-top: 16em;
+        padding-left: 0;
+    }
+}
 
 
 

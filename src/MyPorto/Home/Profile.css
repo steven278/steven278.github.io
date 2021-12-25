@@ -1,8 +1,13 @@
+#profile-wrapper{
+    background-color: var(--dark);
+}
+
 #profilepicwrapper{
     position: relative;
 }
 #profilepic{
     position:absolute;
+    width: 40vw;
 }
 
 .profile-details{
@@ -46,8 +51,257 @@
     background-color: var(--electricBlue);
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) and (max-width: 1431px) {
+    .profile-details{
+        margin-left: 8em;
+        margin-top: 6em;
+    }
+    #hi{
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    #MyName{
+        font-size: 4.125rem;
+        font-weight: 600;
+    }
+    #briefIntro{
+        font-size: 1.3125rem;
+        font-weight: 300;
+    }
+    #btnAboutMe{
+        font-size: 1.25em;
+    }
+    
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    #profileRow {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    
+    #profiledetailwrapper {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+    }
+    
+    #profilepicwrapper{
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+    }
     #profilepic{
-        width: 40vw;
+        position:relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .profile-details{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1em;
+        text-align: center;
+    }
+    #hi{
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    #MyName{
+        font-size: 4.125rem;
+        font-weight: 600;
+    }
+    #briefIntro{
+        font-size: 1.3125rem;
+        font-weight: 300;
+    }
+    #btnAboutMe{
+        font-size: 1.25em;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    #profileRow {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    
+    #profiledetailwrapper {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+    }
+    
+    #profilepicwrapper{
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+    }
+    #profilepic{
+        position:relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .profile-details{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1em;
+        text-align: center;
+    }
+    #hi{
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    #MyName{
+        font-size: 3.5rem;
+        font-weight: 600;
+    }
+    #briefIntro{
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+    #btnAboutMe{
+        font-size: 1.25em;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    #profileRow {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    
+    #profiledetailwrapper {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+    }
+    
+    #profilepicwrapper{
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+    }
+    #profilepic{
+        position:relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .profile-details{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1em;
+        text-align: center;
+    }
+    #hi{
+        font-size: 2.25rem;
+        font-weight: 500;
+    }
+    #MyName{
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    #briefIntro{
+        font-size: 1.15rem;
+        font-weight: 300;
+    }
+    #btnAboutMe{
+        font-size: 1.15em;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    #profileRow {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    
+    #profiledetailwrapper {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+    }
+    
+    #profilepicwrapper{
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+    }
+    #profilepic{
+        position:relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .profile-details{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1em;
+        text-align: center;
+    }
+    #hi{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    #MyName{
+        font-size: 2.75rem;
+        font-weight: 600;
+    }
+    #briefIntro{
+        font-size: 1.1rem;
+        font-weight: 300;
+    }
+    #btnAboutMe{
+        font-size: 1.1em;
     }
 }

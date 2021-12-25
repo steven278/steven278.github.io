@@ -8,10 +8,10 @@ export default function About() {
     return (
         <div className='container-fluid' id='aboutWrapper' >
             <div className="row" id='aboutContainer'>
-                <div className="col-sm-4" data-aos="fade-right" id='imgAboutWrapper'>
+                <div className="col-xxl-3 col-xl-4 col-lg-3 col-md-12 col-sm-12 col-xs-12" data-aos="fade-right" id='imgAboutWrapper'>
                     <img src={AboutPic} alt="profile pic" className='rounded-circle' id='imgAbout' data-aos="fade-right" data-aos-duration="2000"/>
                 </div>
-                <div className="col-sm-5" data-aos="fade-up" data-aos-duration="2000">
+                <div className="col-xxl-5 col-xl-6 col-lg-6 col-md-8 col-sm-8 col-xs-8" data-aos="fade-up" data-aos-duration="2000" id='cardAboutWrapper'>
                     <div className="card shadow-lg projectCard" >
                         <div className="row g-0">
                             <div className="card-body">
