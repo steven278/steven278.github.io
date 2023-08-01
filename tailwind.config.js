@@ -6,7 +6,13 @@ module.exports = {
     'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'night': "url('src/assets/night-mode.png')",
+        'light': "url('src/assets/sun.png')",
+        'test': "url('https://picsum.photos/200')",
+      }
+    },
   },
   plugins: [require('flowbite/plugin')],
 }

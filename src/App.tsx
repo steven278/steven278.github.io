@@ -7,6 +7,7 @@ function App() {
   return (
     <>
     <MyNavbar/>
+    <div className="bg-[url('https://picsum.photos/200')] w-500"></div>
     </>
   )
 }
