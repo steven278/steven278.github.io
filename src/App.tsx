@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import './App.css'
 import { MyNavbar } from './components/navbar/navbar'
+import { MyHome } from './components/home/home'
 
 function App() {
 
   return (
-    <>
-    <MyNavbar/>
-    <div className="bg-[url('https://picsum.photos/200')] w-500"></div>
-    </>
+    <div className="font-poppins">
+      <MyNavbar/>
+      <MyHome/>
+    </div>
   )
 }
 

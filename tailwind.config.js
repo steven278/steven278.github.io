@@ -7,11 +7,20 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'night': "url('src/assets/night-mode.png')",
-        'light': "url('src/assets/sun.png')",
-        'test': "url('https://picsum.photos/200')",
+      fontFamily: {
+        "poppins": ["Poppins"],
+      },
+      colors: {
+        "background": "#1f242d",
+        "second-background": "#323946",
+        "text-color": "#fff",
+        "main-color": "#0ef",
       }
+      // backgroundImage: {
+      //   'night': "url('src/assets/night-mode.png')",
+      //   'light': "url('src/assets/sun.png')",
+      //   'test': "url('https://picsum.photos/200')",
+      // },
     },
   },
   plugins: [require('flowbite/plugin')],
