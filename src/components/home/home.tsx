@@ -4,9 +4,9 @@ import { Typewriter } from 'react-simple-typewriter'
 
 export const MyHome = () => {
     return (
-        <div id="home" className=" bg-gray-100 dark:bg-gray-900 flex flex-col justify-center dark:text-gray-200">
-            <div className="grid grid-cols-2 max-w-screen-xl mx-auto p-4 my-12">
-                <div className=" flex flex-col justify-center gap-4">
+        <div id="home" className=" bg-gray-100 dark:bg-gray-900 dark:text-gray-200 border-2 ">
+            <div className="grid grid-cols-2 max-w-screen-xl mx-auto p-4 border-2 mt-36 mb-24">
+                <div className=" flex flex-col justify-center gap-4 ml-4">
                     <h3 className="text-4xl font-bold">Hello, It's Me</h3>
                     <h1 className="text-7xl font-bold">Steven Lie</h1>
                     <h3 className="text-3xl font-bold">And I'm a <span className="text-cyan-400 text-4xl">

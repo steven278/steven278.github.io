@@ -3,7 +3,7 @@ import HeroPic from '../../assets/blue.svg'
 export const MyAbout = () => {
     return (
         <div id="about" className="bg-gray-100 dark:bg-gray-900 flex flex-col justify-center dark:text-gray-100">
-            <div className="grid grid-cols-2 max-w-screen-xl mx-auto p-4 my-12">
+            <div className="grid grid-cols-2 max-w-screen-xl mx-auto p-4 mt-36 mb-24">
                 <div className="">
                     <img src={HeroPic} alt="Profile Picture" className=''/>
                 </div>

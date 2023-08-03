@@ -1,10 +1,16 @@
 export const MyCards = ({image, title, desc}) => {
     return (
-        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div className="max-w-sm border border-gray-200 
+        rounded-lg dark:bg-cyan-50/10 dark:border-gray-700
+        flex flex-1 flex-col justify-between shadow-md
+        hover:shadow-2xl hover:shadow-cyan-500/50 
+        hover:scale-[1.025] ease-in duration-300
+        dark:hover:shadow-cyan-300/50
+        backdrop-filter backdrop-blur-sm bg-gray-50/30">
             <a href="#">
                 <img className="rounded-t-lg" src={image} alt="" />
             </a>
-            <div className="p-5">
+            <div className="p-5 flex flex-1 flex-col justify-between items-center">
                 <a href="#">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                         {title}

@@ -15,13 +15,14 @@ export const MyProjects = () => {
             <h3 className="text-5xl font-bold">My 
                 <span className="text-cyan-400"> Projects</span>
             </h3>
-            <div className="grid grid-cols-3 max-w-screen-xl mx-auto p-4 my-12 gap-x-6 gap-y-10 border-2">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3
+            max-w-screen-xl mx-auto p-4 my-12 gap-x-6 gap-y-10 border-2">
                 <MyCards image={Consolepay} 
-                    title={"Consolepay"} 
+                    title={"ConsolePay"} 
                     desc={"A website for video game console rent with authentication, admin dashboard, and order features. It was created using Laravel and MySQL"} 
                 />
                 <MyCards image={Paycation}
-                    title={"Paycation"}
+                    title={"PayCation"}
                     desc={"A website for hotel booking with authentication, admin dashboard, and order features. It was created using Laravel and MySQL"}
                 />
                 <MyCards image={Promato}
