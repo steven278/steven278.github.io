@@ -9,7 +9,7 @@ export const MyNavbar = () => {
   const toggleTheme = (e:any) => e.target.checked ? setDarkMode() : setLightMode()
 
   return (
-  <nav className="bg-gray-100 border-gray-200 dark:bg-gray-900">
+  <nav className="bg-gray-100 border-gray-200 dark:bg-gray-900 fixed top-0 w-full">
     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="https://flowbite.com/" className="flex items-center">
           <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="Flowbite Logo" />
@@ -45,15 +45,15 @@ export const MyNavbar = () => {
             dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Experiences</a>
           </li>
           <li>
-            <a href="#portfolio" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 
+            <a href="#projects" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 
             md:hover:bg-transparent md:border-0 md:hover:text-cyan-500 md:p-0 dark:text-white md:dark:hover:text-cyan-400 transition duration-300
-            dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Portfolio</a>
+            dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
           </li>
-          <li>
+          {/* <li>
             <a href="#contact" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 
             md:hover:bg-transparent md:border-0 md:hover:text-cyan-500 md:p-0 dark:text-white md:dark:hover:text-cyan-400 transition duration-300 
             dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-          </li>
+          </li> */}
           <li>
           <label className="relative inline-flex items-center cursor-pointer">
             <input type="checkbox" value="" className="sr-only peer" onChange={toggleTheme}/>
