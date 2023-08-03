@@ -4,6 +4,7 @@ import { MyNavbar } from './components/navbar/navbar'
 import { MyHome } from './components/home/home'
 import { MyAbout } from './components/about/about'
 import { MyProjects } from './components/projects/projects'
+import { MyExperiences } from './components/experiences/experiences'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <MyNavbar/>
       <MyHome/>
       <MyAbout/>
+      <MyExperiences/>
       <MyProjects/>
     </div>
   )

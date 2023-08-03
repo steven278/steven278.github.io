@@ -43,7 +43,7 @@ export const MyProjects = () => {
                 />
                 <MyCards image={Erekapitulasi}
                     title={"E-Recapitulation"}
-                    desc={"A system for storing and displaying the calculation of recapitulation vote result for President and Vice-President based on the blockchain. It was created using React.js, Express.js, PostgreSQL, Solidity and hardhat"}
+                    desc={"A system for storing and displaying the calculation of recapitulation vote result for President and Vice-President based on the blockchain. It was created using React.js, Express.js, PostgreSQL, Solidity and Hardhat"}
                 />
             </div>
         </div>

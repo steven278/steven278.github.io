@@ -4,7 +4,7 @@ import { Typewriter } from 'react-simple-typewriter'
 
 export const MyHome = () => {
     return (
-        <div id="home" className=" bg-gray-100 dark:bg-gray-900 dark:text-gray-200 border-2 ">
+        <div id="home" className=" bg-gray-100 dark:bg-gray-900 dark:text-gray-200 border-2">
             <div className="grid grid-cols-2 max-w-screen-xl mx-auto p-4 border-2 mt-36 mb-24">
                 <div className=" flex flex-col justify-center gap-4 ml-4">
                     <h3 className="text-4xl font-bold">Hello, It's Me</h3>
@@ -29,7 +29,7 @@ export const MyHome = () => {
                     </div>
                     <a href="#" className="w-44 text-center p-3.5 rounded-full
                     bg-cyan-400 mt-5 text-lg font-bold shadow-lg
-                    shadow-cyan-400/50 transition-shadow duration-500 hover:shadow-none
+                    shadow-cyan-400/50 ease-in duration-500 hover:shadow-none
                     dark:text-gray-900">Download CV</a>
                 </div>
                 <div className="">
