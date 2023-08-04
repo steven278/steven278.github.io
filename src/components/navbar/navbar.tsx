@@ -4,6 +4,8 @@ import { HiSun } from 'react-icons/hi';
 import  { useState } from 'react';
 import './navbar.css'
 
+import { MyMenu } from './menu.tsx'
+
 export const MyNavbar = () => {
   //dark mode - light mode toggle functions
   const setDarkMode = () => document.querySelector("html")?.setAttribute("class", "dark")
@@ -39,58 +41,26 @@ export const MyNavbar = () => {
         <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border 
           md:flex-row md:space-x-8 md:mt-0 md:border-0 
           dark:border-gray-700">
-          <li>
-            <a href="#home" className={`block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 
-            md:hover:bg-transparent md:border-0 md:hover:text-cyan-500 md:p-0 dark:text-gray-100 md:dark:hover:text-cyan-400 transition duration-300
-            dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent
-            ${activeMenu === 'home' ? 'active' : ''}`} onClick={() => handleActiveMenu('home')}>Home</a>
-          </li>
-          <li>
-            <a href="#about" className={`block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 
-            md:hover:bg-transparent md:border-0 md:hover:text-cyan-500 md:p-0 dark:text-gray-100 md:dark:hover:text-cyan-400 transition duration-300
-            dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent
-            ${activeMenu === 'about' ? 'active' : ''}`} onClick={() => handleActiveMenu('about')}>About</a>
-          </li>
-          <li>
-            <a href="#experiences" className={`block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 
-            md:hover:bg-transparent md:border-0 md:hover:text-cyan-500 md:p-0 dark:text-gray-100 md:dark:hover:text-cyan-400 transition duration-300 
-            dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent
-            ${activeMenu === 'experiences' ? 'active' : ''}`} onClick={() => handleActiveMenu('experiences')}>Experiences</a>
-          </li>
-          <li>
-            <a href="#projects" className={`block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 
-            md:hover:bg-transparent md:border-0 md:hover:text-cyan-500 md:p-0 dark:text-gray-100 md:dark:hover:text-cyan-400 transition duration-300
-            dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent
-            ${activeMenu === 'projects' ? 'active' : ''}`} onClick={() => handleActiveMenu('projects')}>Projects</a>
-          </li>
-          {/* <li>
-            <a href="#contact" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 
-            md:hover:bg-transparent md:border-0 md:hover:text-cyan-500 md:p-0 dark:text-gray-100 md:dark:hover:text-cyan-400 transition duration-300 
-            dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-          </li> */}
-          <li>
-          <label className="relative inline-flex items-center cursor-pointer">
-            <input type="checkbox" value="" className="sr-only peer" onChange={toggleTheme}/>
-            <div className="w-11 h-6 bg-gray-800 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-gray-300
-            dark:peer-focus:ring-gray-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
-            peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px]  
-            after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all after:flex after:justify-center after:items-center
-            after:bg-white dark:after:bg-gray-800 dark:border-gray-600 peer-checked:bg-gray-200 flex justify-evenly items-center">
-              {/* <span className="">🌞</span>
-              <span className="">🌛</span>
-               */}
-              <span><HiSun className=""/></span>
-              <span><IoIosMoon className="text-white"/></span>
-            </div>
-          </label>
+            <MyMenu id="Home" activeMenu={activeMenu} handleActiveMenu={handleActiveMenu}/>
+            <MyMenu id="About" activeMenu={activeMenu} handleActiveMenu={handleActiveMenu}/>
+            <MyMenu id="Experiences" activeMenu={activeMenu} handleActiveMenu={handleActiveMenu}/>
+            <MyMenu id="Projects" activeMenu={activeMenu} handleActiveMenu={handleActiveMenu}/>
+          <li className="max-md:pl-3 max-md:py-2">
+            <label className=" relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" value="" className="sr-only peer" onChange={toggleTheme}/>
+              <div className="w-11 h-6 bg-gray-800 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-gray-300
+              dark:peer-focus:ring-gray-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
+              peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px]  
+              after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all after:flex after:justify-center after:items-center
+              after:bg-white dark:after:bg-gray-800 dark:border-gray-600 peer-checked:bg-gray-200 flex justify-evenly items-center">
+                <span><HiSun className=""/></span>
+                <span><IoIosMoon className="text-white"/></span>
+              </div>
+            </label>
           </li>
         </ul>
       </div>
     </div>
-    {/* <div className=" max-w-screen-xl flex flex-wrap items-center justify-between mx-auto w-full bg-gray-200 rounded-full h-1.5 mb-2 dark:bg-gray-700">
-      <div className="bg-cyan-400 h-1.5 rounded-full dark:bg-cyan-400" style={{width: "45%"}}></div>
-    </div> */}
-
   </nav>
   )
 }

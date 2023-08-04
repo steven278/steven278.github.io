@@ -11,7 +11,7 @@ import { MyCards } from './cards'
 
 export const MyProjects = () => {
     return (
-        <div id="projects" className="bg-gray-100 dark:bg-gray-900 flex flex-col justify-center dark:text-gray-100 text-center pt-24">
+        <div id="Projects" className="bg-gray-100 dark:bg-gray-900 flex flex-col justify-center dark:text-gray-100 text-center pt-24">
             <h3 className="text-5xl font-bold">My 
                 <span className="text-cyan-400"> Projects</span>
             </h3>

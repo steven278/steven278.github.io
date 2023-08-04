@@ -4,5 +4,12 @@
 @tailwind utilities;
 
 .active {
-    @apply text-cyan-400
+    @apply text-cyan-400 !important
 }
+
+@media not all and (min-width: 768px) { 
+    .active {
+        @apply bg-cyan-500 text-gray-100 !important
+    }
+}
+

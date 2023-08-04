@@ -2,7 +2,7 @@ import HeroPic from '../../assets/blue.svg'
 
 export const MyAbout = () => {
     return (
-        <div id="about" className="bg-gray-100 dark:bg-gray-900 flex flex-col justify-center dark:text-gray-100">
+        <div id="About" className="bg-gray-100 dark:bg-gray-900 flex flex-col justify-center dark:text-gray-100">
             <div className="grid md:grid-rows-1 md:grid-cols-2 grid-rows-2
             max-w-screen-xl mx-auto p-4
             mt-36 mb-40 ">
