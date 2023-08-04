@@ -4,7 +4,6 @@ export const MyMenu = ({id, activeMenu, handleActiveMenu}) => {
             <a href={`#${id}`} className={`block py-2 pl-3 pr-4 md:border-0 
             md:p-0 rounded transition duration-400 text-gray-900 
             dark:text-gray-100 
-
             ${activeMenu === id ? 'active' : ''}`} 
             onClick={() => handleActiveMenu(id)}>{id}</a>
         </li>
