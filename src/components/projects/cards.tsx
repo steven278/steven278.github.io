@@ -1,6 +1,6 @@
 import { BsGithub } from 'react-icons/bs'
 
-export const MyCards = ({image, title, desc}) => {
+export const MyCards = ({image, title, desc, url}) => {
     return (
         <div className="max-w-sm border border-gray-200 
         rounded-lg dark:bg-cyan-50/10 dark:border-gray-700
@@ -9,7 +9,7 @@ export const MyCards = ({image, title, desc}) => {
         hover:scale-[1.025] ease-in duration-300
         dark:hover:shadow-cyan-300/50
         backdrop-filter backdrop-blur-sm bg-gray-50/30">
-            <a href="#">
+            <a href={url} target="_blank">
                 <img className="rounded-t-lg" src={image} alt="" />
             </a>
             <div className="p-5 flex flex-1 flex-col justify-between items-center">
@@ -18,12 +18,12 @@ export const MyCards = ({image, title, desc}) => {
                         {title}
                     </h5>
                 </a>
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                <p className="mb-4 mt-2 font-normal text-gray-700 dark:text-gray-300">
                     {desc}
                 </p>
-                <a href="#" className="inline-flex items-center px-3.5 py-2.5 
+                <a href={url} target="_blank" className="inline-flex items-center px-3.5 py-2.5 
                 text-sm font-medium text-center
-                text-white bg-cyan-400 rounded-full hover:bg-cyan-500
+                text-gray-100 bg-cyan-400 rounded-full hover:bg-cyan-500
                 focus:ring-4 focus:outline-none focus:ring-blue-300 
                 dark:bg-cyan-400 dark:hover:bg-cyan-500 dark:text-gray-900
                 dark:focus:ring-blue-800 ease-in duration-300">
