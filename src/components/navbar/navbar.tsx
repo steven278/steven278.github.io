@@ -1,12 +1,20 @@
 import { IoIosMoon } from 'react-icons/io';
 import { HiSun } from 'react-icons/hi';
 
+import  { useState } from 'react';
 import './navbar.css'
 
 export const MyNavbar = () => {
+  //dark mode - light mode toggle functions
   const setDarkMode = () => document.querySelector("html")?.setAttribute("class", "dark")
   const setLightMode = () => document.querySelector("html")?.setAttribute("class", "light")
   const toggleTheme = (e:any) => e.target.checked ? setDarkMode() : setLightMode()
+
+  //active navbar menu function
+  const [activeMenu, setActiveMenu] = useState<string>('home');
+  const handleActiveMenu = (item: string) => {
+    setActiveMenu(item)
+  }
 
   return (
   <nav className="  fixed top-0 w-full z-50 backdrop-blur-md bg-white/30 dark:bg-gray-900/30">
@@ -32,26 +40,28 @@ export const MyNavbar = () => {
           md:flex-row md:space-x-8 md:mt-0 md:border-0 
           dark:border-gray-700">
           <li>
-            <a href="#home" className=" block py-2 pl-3 pr-4 bg-blue-700 
-            rounded md:bg-transparent
-            active:text-cyan-500 text-gray-900 md:p-0
-            dark:text-gray-100 md:dark:text-cyan-400 transition 
-            duration-300" aria-current="page">Home</a>
-          </li>
-          <li>
-            <a href="#about" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 
+            <a href="#home" className={`block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 
             md:hover:bg-transparent md:border-0 md:hover:text-cyan-500 md:p-0 dark:text-gray-100 md:dark:hover:text-cyan-400 transition duration-300
-            dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+            dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent
+            ${activeMenu === 'home' ? 'active' : ''}`} onClick={() => handleActiveMenu('home')}>Home</a>
           </li>
           <li>
-            <a href="#experiences" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 
+            <a href="#about" className={`block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 
+            md:hover:bg-transparent md:border-0 md:hover:text-cyan-500 md:p-0 dark:text-gray-100 md:dark:hover:text-cyan-400 transition duration-300
+            dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent
+            ${activeMenu === 'about' ? 'active' : ''}`} onClick={() => handleActiveMenu('about')}>About</a>
+          </li>
+          <li>
+            <a href="#experiences" className={`block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 
             md:hover:bg-transparent md:border-0 md:hover:text-cyan-500 md:p-0 dark:text-gray-100 md:dark:hover:text-cyan-400 transition duration-300 
-            dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Experiences</a>
+            dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent
+            ${activeMenu === 'experiences' ? 'active' : ''}`} onClick={() => handleActiveMenu('experiences')}>Experiences</a>
           </li>
           <li>
-            <a href="#projects" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 
+            <a href="#projects" className={`block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 
             md:hover:bg-transparent md:border-0 md:hover:text-cyan-500 md:p-0 dark:text-gray-100 md:dark:hover:text-cyan-400 transition duration-300
-            dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+            dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent
+            ${activeMenu === 'projects' ? 'active' : ''}`} onClick={() => handleActiveMenu('projects')}>Projects</a>
           </li>
           {/* <li>
             <a href="#contact" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 
@@ -69,7 +79,7 @@ export const MyNavbar = () => {
               {/* <span className="">🌞</span>
               <span className="">🌛</span>
                */}
-              <span><HiSun class=""/></span>
+              <span><HiSun className=""/></span>
               <span><IoIosMoon className="text-white"/></span>
             </div>
           </label>
