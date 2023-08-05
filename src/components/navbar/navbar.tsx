@@ -5,6 +5,8 @@ import  { useState } from 'react';
 import './navbar.css'
 
 import { MyMenu } from './menu.tsx'
+import MyLogo from '../../assets/logo-no-background.svg'
+import MyLogoDark from '../../assets/logo-no-background-dark-mode.svg'
 
 export const MyNavbar = () => {
   //dark mode - light mode toggle functions
@@ -13,16 +15,17 @@ export const MyNavbar = () => {
   const toggleTheme = (e:any) => e.target.checked ? setDarkMode() : setLightMode()
 
   //active navbar menu function
-  const [activeMenu, setActiveMenu] = useState<string>('home');
-  const handleActiveMenu = (item: string) => {
-    setActiveMenu(item)
-  }
+  // const [activeMenu, setActiveMenu] = useState<string>('home');
+  // const handleActiveMenu = (item: string) => {
+  //   setActiveMenu(item)
+  // }
 
   return (
   <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-white/30 dark:bg-gray-900/30">
     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="#" className="flex items-center">
-          <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="Flowbite Logo" />
+          <img src={MyLogo} className="h-8 mr-3 dark:hidden" alt="My Logo" />
+          <img src={MyLogoDark} className="h-8 mr-3 hidden dark:inline" alt="My Logo" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-gray-100">Steven Lie</span>
       </a>
       <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 
@@ -41,10 +44,10 @@ export const MyNavbar = () => {
         <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border 
           md:flex-row md:space-x-8 md:mt-0 md:border-0 
           dark:border-gray-700">
-            <MyMenu id="Home" activeMenu={activeMenu} handleActiveMenu={handleActiveMenu}/>
-            <MyMenu id="About" activeMenu={activeMenu} handleActiveMenu={handleActiveMenu}/>
-            <MyMenu id="Experiences" activeMenu={activeMenu} handleActiveMenu={handleActiveMenu}/>
-            <MyMenu id="Projects" activeMenu={activeMenu} handleActiveMenu={handleActiveMenu}/>
+            <MyMenu id="Home"/>
+            <MyMenu id="About"/>
+            <MyMenu id="Experiences"/>
+            <MyMenu id="Projects"/>
           <li className="max-md:pl-3 max-md:py-2">
             <label className=" relative inline-flex items-center cursor-pointer">
               <input type="checkbox" value="" className="sr-only peer" onChange={toggleTheme}/>

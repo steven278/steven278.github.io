@@ -11,25 +11,6 @@ import { MyCards } from './cards'
 import { motion } from "framer-motion";
 
 export const MyProjects = () => {
-    const container = {
-        hidden: { opacity: 1, scale: 0 },
-        visible: {
-          opacity: 1,
-          scale: 1,
-          transition: {
-            delayChildren: 0.3,
-            staggerChildren: 0.2
-          }
-        }
-      };
-      
-      const item = {
-        hidden: { y: 20, opacity: 0 },
-        visible: {
-          y: 0,
-          opacity: 1
-        }
-      };
     return (
         <div id="Projects" className="bg-gray-100 dark:bg-gray-900 flex flex-col justify-center dark:text-gray-100 text-center pt-24">
             <h3 className="text-5xl font-bold">My 
@@ -77,16 +58,6 @@ export const MyProjects = () => {
                     desc={"A system for storing and displaying the calculation of recapitulation vote result for President and Vice-President based on the blockchain. It was created using React.js, Express.js, PostgreSQL, Web3.js, Solidity and Hardhat"}
                     url={"https://github.com/steven278/e-rekapitulasi-blockchain"}
                 />
-                <motion.ul
-                    className="container"
-                    variants={container}
-                    initial="hidden"
-                    animate="visible"
-                >
-                    {[0, 1, 2, 3].map((index) => (
-                    <motion.li key={index} className="item" variants={item} />
-                    ))}
-                </motion.ul>
             </div>
         </div>
     )

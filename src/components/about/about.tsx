@@ -1,5 +1,6 @@
 import HeroPic from '../../assets/blue.svg'
 
+
 export const MyAbout = () => {
     return (
         <div id="About" className="bg-gray-100 dark:bg-gray-900 flex flex-col justify-center dark:text-gray-100">
