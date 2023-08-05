@@ -22,7 +22,7 @@ export const MyAbout = () => {
                         <span className="text-cyan-400"> Me</span>
                     </h3>
                     <h4 className="text-3xl font-bold">Backend Developer</h4>
-                    <p className="text-lg">Hello, my name is Steven, an enthusiastic Informatics fresh graduate of Multimedia Nusantara University. Currently seeking for a job as a web developer to pursue my passion for web development, especially as a backend developer. I am a reliable, trustworthy, hardworking, and flexible individual who can learn new skills easily and execute them swiftly</p>
+                    <p className="text-lg text-justify ml-2 md:ml-0">Hello, my name is Steven, an enthusiastic Informatics fresh graduate of Multimedia Nusantara University. Currently seeking for a job as a web developer to pursue my passion for web development, especially as a backend developer. I am a reliable, trustworthy, hardworking, and flexible individual who can learn new skills easily and execute them swiftly</p>
                     {/* <p className="text-">A Last Year Computer Science Student at Multimedia Nusantara University</p> */}
                     {/* <a href="">Read More</a> */}
                 </motion.div>
