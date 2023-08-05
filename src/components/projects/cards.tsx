@@ -1,6 +1,13 @@
 import { BsGithub } from 'react-icons/bs'
 
-export const MyCards = ({image, title, desc, url}) => {
+interface Props {
+    image: string;
+    title: string;
+    desc: string;
+    url: string;
+}
+
+export const MyCards = ({image, title, desc, url}: Props) => {
     return (
         <div className="max-w-sm border border-gray-200 
         rounded-lg dark:bg-cyan-50/10 dark:border-gray-700

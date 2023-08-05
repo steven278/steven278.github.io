@@ -8,7 +8,6 @@ import Erekapitulasi from '../../assets/e-rekapitulasi.png'
 import Dsion from '../../assets/Dsion.png'
 
 import { MyCards } from './cards'
-import { motion } from "framer-motion";
 
 export const MyProjects = () => {
     return (

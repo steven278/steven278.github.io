@@ -1,7 +1,6 @@
 import { IoIosMoon } from 'react-icons/io';
 import { HiSun } from 'react-icons/hi';
 
-import  { useState } from 'react';
 import './navbar.css'
 
 import { MyMenu } from './menu.tsx'

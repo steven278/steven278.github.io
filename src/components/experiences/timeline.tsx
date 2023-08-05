@@ -1,4 +1,10 @@
-export const MyTimeline = ({date, title, description}) => {
+interface Props 
+{date: String;
+title: String;
+description: String;};
+
+
+export const MyTimeline = ({date, title, description}:Props) => {
     return (
         <li className="mb-10 ml-4">
             <div className="absolute w-3 h-3 bg-cyan-400 rounded-full mt-1.5 -left-1.5 border border-cyan-400 dark:border-cyan-500 dark:bg-cyan-500"></div>
