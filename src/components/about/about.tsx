@@ -1,5 +1,6 @@
-import HeroPic from '../../assets/blue.svg'
+import HeroPic from '../../assets/me-removed-bg.png'
 
+import { motion } from "framer-motion";
 
 export const MyAbout = () => {
     return (
@@ -7,10 +8,16 @@ export const MyAbout = () => {
             <div className="grid md:grid-rows-1 md:grid-cols-2 grid-rows-2
             max-w-screen-xl mx-auto pt-4 pr-4 pb-4
             mt-36 mb-40">
-                <div className=" flex justify-start content-start items-start">
-                    <img src={HeroPic} alt="Profile Picture" className=''/>
-                </div>
-                <div className="flex flex-col justify-center text-center md:text-left md:items-start gap-4 gap-y-6 ">
+                <motion.div className=" flex justify-center content-center items-start"
+                initial={{x: -700, y: 0}}
+                animate={{x: 0, y: 0}}
+                transition={{ duration: 2, type: 'tween'}}>
+                    <img src={HeroPic} alt="Profile Picture" className='w-4/6'/>
+                </motion.div>
+                <motion.div className="flex flex-col justify-center text-center md:text-left md:items-start gap-4 gap-y-6"
+                initial={{x: 700, y: 0}}
+                animate={{x: 0, y: 0}}
+                transition={{ duration: 2, type: 'tween'}}>
                     <h3 className="text-5xl font-bold">About 
                         <span className="text-cyan-400"> Me</span>
                     </h3>
@@ -18,7 +25,7 @@ export const MyAbout = () => {
                     <p className="text-lg">Hello, my name is Steven, an enthusiastic Informatics fresh graduate of Multimedia Nusantara University. Currently seeking for a job as a web developer to pursue my passion for web development, especially as a backend developer. I am a reliable, trustworthy, hardworking, and flexible individual who can learn new skills easily and execute them swiftly</p>
                     {/* <p className="text-">A Last Year Computer Science Student at Multimedia Nusantara University</p> */}
                     {/* <a href="">Read More</a> */}
-                </div>
+                </motion.div>
             </div>
         </div>
     )
