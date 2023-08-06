@@ -7,8 +7,8 @@ export const MyAbout = () => {
         <div id="About" className="bg-gray-100 dark:bg-gray-900 flex flex-col justify-center dark:text-gray-100">
             <div className="grid md:grid-rows-1 md:grid-cols-2 grid-rows-2
             max-w-screen-xl mx-auto pt-4 pr-4 pb-4
-            mt-36 mb-40">
-                <motion.div className=" flex justify-center content-center items-start"
+            mt-36 mb-40 max-md:mt-0 max-md:mb-0">
+                <motion.div className=" flex justify-center content-center items-start max-md:h-0"
                 initial={{x: -700, y: 0}}
                 animate={{x: 0, y: 0}}
                 transition={{ duration: 2, type: 'tween'}}>

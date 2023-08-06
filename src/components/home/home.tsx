@@ -1,3 +1,5 @@
+import { Link } from 'react-scroll';
+
 import HeroPic from '../../assets/blue.svg'
 import { FaLinkedin, FaGithub, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import { Typewriter } from 'react-simple-typewriter'
@@ -33,10 +35,11 @@ export const MyHome = () => {
                         <a href="https://wa.me/082110693513" target="_blank"><FaWhatsapp className='w-10 h-10 border-2
                         rounded-full p-2 text-cyan-400 border-cyan-400 transition duration-500 hover:bg-cyan-400 hover:text-gray-900 hover:shadow-lg hover:shadow-cyan-400/50 '/></a>
                     </div>
-                    <a href="#" className="md:w-40 sm:w-32 text-center p-3.5 rounded-full
+                    <Link  className="md:w-40 sm:w-32 text-center p-3.5 rounded-full
                     bg-cyan-400 mt-5 lg:text-lg font-bold shadow-lg
                     shadow-cyan-400/50 ease-in duration-500 hover:shadow-none
-                    dark:text-gray-900 md:text-md">Read More</a>
+                    dark:text-gray-900 md:text-md cursor-pointer"
+                    activeClass="active" to={'About'} spy={true} smooth={true} offset={-50} duration={500}>Read More</Link>
                 </motion.div>
                 <motion.div className="md:order-last order-1 flex justify-center"
                 initial={{x: 700, y: 0}}

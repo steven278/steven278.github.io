@@ -5,8 +5,6 @@ import { MyAbout } from './components/about/about'
 import { MyProjects } from './components/projects/projects'
 import { MyExperiences } from './components/experiences/experiences'
 
-import 'flowbite'
-
 function App() {
 
   return (
