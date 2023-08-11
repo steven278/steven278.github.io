@@ -19,7 +19,7 @@ export const MyHome = () => {
                     <h1 className="text-5xl lg:text-7xl font-bold">Steven Lie</h1>
                     <h3 className="text-2xl lg:text-3xl font-bold">And I'm a <span className="text-cyan-400 text-3xl lg:text-4xl">
                             <Typewriter 
-                            words={['Backend Developer', 'Web Developer']}
+                            words={['Web Developer', 'Fresh Graduate']}
                             loop={false}
                             cursor={true} />
                         </span>
