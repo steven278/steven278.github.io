@@ -24,9 +24,9 @@ export const MyAbout = () => {
                     <h4 className="text-3xl font-bold">Backend Developer</h4>
                     <p className="text-lg text-justify ml-2 md:ml-0">
                     An enthusiastic Informatics bachelor fresh graduate at Universitas Multimedia Nusantara. 
-                    Currently seeking a web developer position to pursue my passion. 
-                    A reliable, trustworthy, hardworking, collaborative, and ﬂexible individual who can learn new skills quickly and execute them swiftly. 
-                    Interested in web development, especially in backend development and blockchain.
+                    Currently seeking an IT related position to pursue my passion. 
+                    A reliable, trustworthy, hardworking, collaborative, 
+                    and ﬂexible individual who interested in IT related fields, especially in full stack development.
                     </p>
                     {/* <p className="text-">A Last Year Computer Science Student at Multimedia Nusantara University</p> */}
                     {/* <a href="">Read More</a> */}
