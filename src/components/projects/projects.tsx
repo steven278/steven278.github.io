@@ -1,11 +1,11 @@
-import Consolepay from '../../assets/Consolepay.jpg'
-import Paycation from '../../assets/Paycation.jpg'
-import Promato from '../../assets/Promato.png'
-import Readingcinemas from '../../assets/Readingcinemas.jpg'
-import Sushipay from '../../assets/Sushipay.jpg'
-import Secondhand from '../../assets/Secondhand.png'
+import Consolepay from '../../assets/consolepay.jpg'
+import Paycation from '../../assets/paycation.jpg'
+import Promato from '../../assets/promato.png'
+import Readingcinemas from '../../assets/readingcinemas.jpg'
+import Sushipay from '../../assets/sushipay.jpg'
+import Secondhand from '../../assets/secondhand.png'
 import Erekapitulasi from '../../assets/e-rekapitulasi.png'
-import Dsion from '../../assets/Dsion.png'
+import Dsion from '../../assets/dsion.png'
 
 import { MyCards } from './cards'
 
